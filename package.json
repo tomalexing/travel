@@ -5,7 +5,6 @@
     "build": "gulp build --production",
     "start": "gulp"
   },
-  "author": "buschidos || coderiver",
   "devDependencies": {
     "autoprefixer": "^6.3.1",
     "babel-core": "^6.7.2",
