@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="733px" height="759px" viewBox="0 0 733 759" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.3 (16044) - http://www.bohemiancoding.com/sketch -->
+    <title>front_a</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FF6363" offset="0%"></stop>
+            <stop stop-color="#F8393A" offset="99.4160555%"></stop>
+        </linearGradient>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="30" in="SourceAlpha" operator="dilate" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="50" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.0823529412   0 0 0 0 0.0823529412   0 0 0 0 0.0823529412  0 0 0 0.63 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="text" sketch:type="MSLayerGroup" transform="translate(-124.000000, -78.000000)" filter="url(#filter-2)" fill="url(#linearGradient-1)">
+            <path d="M390.365434,690.410561 L603.320307,690.410561 L623.281228,736.989533 L756.371482,736.989533 L490.190975,178 L224,737 L357.090254,737 L390.365434,690.410561 L390.365434,690.410561 Z M443.601535,570.624099 L496.837637,464.151896 L550.073738,570.624099 L443.601535,570.624099 L443.601535,570.624099 Z" id="front_a" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

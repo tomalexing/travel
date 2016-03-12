@@ -1,0 +1,335 @@
+$project-inner-width: percentage(1420/1800)
+
+.project-container
+  position: relative
+
+.project
+  padding: 100px 60px 0
+  min-height: 100vh
+  box-sizing: border-box
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  background: white
+  &_one-col
+    display: block
+    padding-bottom: 60px
+    .project__heading
+      position: static
+      margin-bottom: 55px
+    .project__inner
+      margin: 0 auto
+    .project__figure
+      float: none
+      width: auto
+    .project__about
+      float: none
+      width: auto
+      padding: 0
+      max-width: 700px
+      text-align: center
+      margin: 90px auto 0
+    .project__about-line
+      margin-left: auto
+      margin-right: auto
+  +rh(800)
+    padding-top: 70px
+    .project__heading
+      top: 70px
+
+.project-milkyway
+  .project__figure
+    width: 55%
+
+.project__inner
+  width: $project-inner-width
+  max-width: 1420px
+  box-sizing: border-box
+  margin: 160px 0 120px
+  position: relative
+  z-index: 0
+  +clr
+  +r(1023)
+    width: auto
+
+.project__heading
+  position: absolute
+  z-index: 1
+  top: 100px
+  margin: auto
+  left: 0
+  right: 0
+  text-align: center
+  .h4
+    margin-top: 15px
+
+.project__figure
+  float: left
+  width: 60%
+  position: relative
+  z-index: 1
+  box-sizing: border-box
+
+.project__image
+  display: block
+  max-width: 100%
+  margin: auto
+  position: absolute
+  top: -60px
+  top: -5vh
+  +rhmin(800)
+    top: -9.2vh
+
+.qmedic-interface
+  position: absolute
+  top: -100px
+  top: -5vh
+  right: 0
+  max-width: 100%
+  border-radius: percentage(8/747)
+  +rhmin(800)
+    top: -9.2vh
+  +rmin(1680)
+    max-width: none
+
+.rex-pro-interface
+  +rmin(1680)
+    left: -100px
+
+.project__about
+  float: right
+  width: 40%
+  padding: 0 0 0 70px
+  position: relative
+  z-index: 0
+  box-sizing: border-box
+  +rh(800)
+    +rmin(1024)
+      font-size: 12px
+      .h3
+        font-size: 20px
+
+
+.project__about-line
+  width: 58px
+  height: 6px
+  margin: 25px 0
+  background: #00c6ca
+  &_dark
+    background: black
+  &_lighter
+    background: #93DDCC
+
+.project__description
+  margin: 30px 0 40px
+  line-height: 2
+  +f(l)
+
+.project__bg
+  position: absolute
+  pointer-events: none
+  z-index: 0
+  bottom: 0
+  left: 0
+  right: 0
+  top: 0
+  overflow: hidden
+
+.bg-qmedic
+  background: white img-url('svg/qmedic-bg.svg') no-repeat center bottom
+  background-size: 100% auto
+  top: auto
+  &:before
+    content: ""
+    display: block
+    padding-bottom: percentage(639/1920)
+  +r(600)
+    background-size: cover
+    &:before
+      padding-bottom: 58%
+
+.bg-milkyway
+  background: white
+  width: $project-inner-width
+  left: 0
+  right: 0
+  margin: auto
+  overflow: visible
+  +r(600)
+    bottom: auto
+    min-height: 260px
+  &__layer-1
+    position: absolute
+    top: 50%
+    width: percentage(430/1420)
+    background: img-url('milkyway-bg-layer-1.jpg') no-repeat center
+    background-size: cover
+    left: percentage(-115/1420)
+    +r(600)
+      display: none
+    &:before
+      content: ""
+      display: block
+      padding-bottom: percentage(567/430)
+
+
+  &__layer-2
+    position: absolute
+    top: 0
+    max-width: 588px
+    width: percentage(588/1420)
+    height: 100%
+    background: img-url('milkyway-bg-layer-2.jpg') no-repeat center
+    background-size: cover
+    left: percentage(100/1420)
+
+.bg-rex-pro
+  background-size: 100% auto
+  top: auto
+  overflow: hidden
+  &:before
+    content: ""
+    display: block
+    padding-bottom: percentage(582/1920)
+  &__layer-1
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: img-url('svg/rex-pro-bg-layer-1.svg') no-repeat center bottom
+    background-size: cover
+  &__layer-2
+    position: absolute
+    top: 0
+    left: 100%
+    width: 100%
+    height: 100%
+    background: #FFF
+  &__layer-3
+    position: absolute
+    width: percentage(1942/1920)
+    bottom: percentage(37/582)
+    right: percentage(10/1920)
+    &:before
+      content: ""
+      display: block
+      padding-bottom: percentage(215/1942)
+      background: img-url('svg/rex-pro-bg-layer-2.svg') no-repeat right center
+      background-size: contain
+  +r(600)
+    &:before
+      padding-bottom: 70%
+
+
+$milkyway-width: 683
+$milkyway-height: 544
+.milkyway
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  max-width: $milkyway-width + px
+  &:before
+    content: ""
+    display: block
+    padding-bottom: percentage($milkyway-height/$milkyway-width)
+  +r(810)
+    max-width: 88%
+
+.milkyway__layer-0
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: rgb(254, 224, 229)
+  box-shadow: 0px 0px 51px 0px rgba(141, 87, 2, 0.57)
+
+.milkyway__layer-1
+  position: absolute
+  top: percentage(-80/$milkyway-height)
+  right: percentage(-60/$milkyway-width)
+  width: percentage(175/$milkyway-width)
+  background: img-url('milkyway-layer-1.png') no-repeat center center/cover
+  background-size: cover
+  &:before
+    content: ""
+    display: block
+    padding-bottom: percentage(171/175)
+
+.milkyway__layer-2
+  position: absolute
+  top: percentage(39/$milkyway-height)
+  right: percentage(-73/$milkyway-width)
+  background: white img-url('milkyway-layer-2.png') no-repeat
+  background-position: right 30% center
+  background-size: auto 73.5%
+  box-shadow: 0px 0px 51px 0px rgba(141, 87, 2, 0.34)
+  width: percentage(528/$milkyway-width)
+  &:before
+    content: ""
+    display: block
+    padding-bottom: percentage(454/528)
+
+.milkyway__layer-3
+  position: absolute
+  top: percentage(-141/$milkyway-height)
+  left: percentage(14/$milkyway-width)
+  width: percentage(369/$milkyway-width)
+  background: img-url('milkyway-layer-3.png') no-repeat
+  background-size: contain
+  &:before
+    content: ""
+    display: block
+    padding-bottom: percentage(636/369)
+
+.project
+  +r(1023)
+    display: block
+    min-height: 0
+    padding: 60px 15px
+    .project__heading
+      position: relative
+      top: auto
+      left: auto
+      right: auto
+      .h4
+        margin-top: 7px
+
+    .project__inner
+      margin: 40px 0 0
+
+    .project__figure
+      float: none
+      width: auto
+
+    .project__about
+      float: none
+      width: auto
+      padding: 0
+      margin: 60px auto 0
+      max-width: 700px
+      text-align: center
+
+    .project__about-line
+      margin-left: auto
+      margin-right: auto
+
+    .project__description
+      padding: 0
+      font-size: 15px
+      line-height: 1.8
+
+    .project__image
+      position: static
+
+    .qmedic-interface
+      box-shadow: 0 5px 10px rgba(black, 0.15)
+
+    .milkyway
+      position: relative
+      margin: auto
+      margin-top: percentage(140/$milkyway-width)
+      left: percentage(-30/$milkyway-width)

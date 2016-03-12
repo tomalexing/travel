@@ -1,0 +1,76 @@
+.header
+  position: fixed
+  z-index: 10
+  top: 0
+  left: 0
+  right: 0
+  padding: 60px 40px 0 60px
+  +clr
+  +rmin(1650)
+    padding-right: 50px
+  +rh(800)
+    padding-top: 30px
+  +r(1024)
+    padding: 15px 22px
+
+.header__left
+  float: left
+  font-size: 0
+
+.header__right
+  float: right
+
+.header__link
+  display: inline-block
+  color: inherit
+  text-decoration: none
+  opacity: 0.7
+  +trans(opacity)
+  .svg-icon
+    font-size: 32px
+  &:hover
+   opacity: 1
+
+.main-content-container
+  position: absolute
+  z-index: 0
+  top: 0
+  left: 0
+  right: 0
+  min-height: 100vh
+  overflow: hidden
+  background: black
+  perspective: 1500px
+
+.main-content
+  transform-origin: center top
+  background: white
+
+.section
+  perspective: 4500px
+  z-index: 0
+  &.next
+    .section-content
+      transform-origin: center top
+      transform: translate3d(0,0,0) rotateX(-90deg)
+  &.prev
+    .section-content
+      transform-origin: center bottom
+      transform: translate3d(0,0,0) rotateX(90deg)
+  &.active
+    z-index: 1
+    .section-content
+      transform: translate3d(0,0,0) rotateX(0)
+  +r(1023)
+    height: auto !important
+    &.next,
+    &.prev,
+    &.active,
+      .section-content
+        transform-origin: center top
+        transform: none
+
+
+.section-content
+  transform-origin: center bottom
+  transition: transform 0.7s cubic-bezier(0.770, 0.000, 0.175, 1.000)

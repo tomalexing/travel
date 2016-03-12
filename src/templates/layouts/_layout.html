@@ -1,0 +1,21 @@
+{% import "./_mixins.html" as mixins %}
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    {% include "./_head.html" %}
+  </head>
+  <body{% if BODY_CLASS %} class="{{ BODY_CLASS }}"{% endif %}>
+
+    <!-- BEGIN content -->
+    {% block content %}{% endblock %}
+    <!-- END content -->
+
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/common.js"></script>
+    {% for script in SCRIPTS %}
+    <script type="text/javascript" src="js/{{ script }}.js"></script>
+    {% endfor %}
+    <!-- END scripts -->
+
+  </body>
+</html>

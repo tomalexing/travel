@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Iconfont Preview</title>
+  <style type="text/css" media="all">
+
+    h1 {
+      text-align: center;
+    }
+
+    .icons-list {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      font-size: 0;
+      text-align: center;
+    }
+
+    .icon-box {
+      display: inline-block;
+      vertical-align: middle;
+      min-width: 200px;
+      min-height: 200px;
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    .icon-container {
+      min-height: 170px;
+      text-align: center;
+      font-size: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #CCC;
+      border-radius: 5px;
+      box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    input:not([type=range]) {
+      display: inline-block;
+      vertical-align: top;
+      width: 100%;
+      box-sizing: border-box;
+      font-size: 12px;
+      border-radius: 5px;
+      height: 30px;
+      padding: 0;
+      text-align: center;
+      border: 1px solid #CCC;
+      box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.2);
+      -webkit-appearance: none;
+    }
+
+    input[type=range] {
+      display: block;
+      width: 100%;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    .icon-class-name {
+      width: 70%;
+    }
+
+    .icon-unicode {
+      width: 30%;
+    }
+
+    .icon-back_a {
+      width: 0.95em;
+      height: 1em;
+      /*fill: #E46363;*/
+      /*stroke: initial;*/
+      fill: initial;
+      stroke: black;
+    }
+    .icon-behance {
+      width: 1em;
+      height: 1em;
+      /*fill: #4A4A4A;*/
+      /*stroke: initial;*/
+      fill: initial;
+      stroke: black;
+    }
+    .icon-char_c {
+      width: 0.92em;
+      height: 1em;
+      /*fill: #FFF;*/
+      /*stroke: initial;*/
+      fill: initial;
+      stroke: black;
+    }
+    .icon-char_g {
+      width: 0.95em;
+      height: 1em;
+      /*fill: #FFF;*/
+      /*stroke: initial;*/
+      fill: initial;
+      stroke: black;
+    }
+    .icon-char_i {
+      width: 0.25em;
+      height: 1em;
+      /*fill: #FFF;*/
+      /*stroke: initial;*/
+      fill: initial;
+      stroke: black;
+    }
+    .icon-char_m {
+      width: 1.1em;
+      height: 1em;
+      /*fill: #FFF;*/
+      /*stroke: initial;*/
+      fill: initial;
+      stroke: black;
+    }
+    .icon-char_m2 {
+      width: 0.55em;
+      height: 1em;
+      /*fill: #FFF;*/
+      /*stroke: initial;*/
+      fill: initial;
+      stroke: black;
+    }
+    .icon-char_n {
+      width: 0.92em;
+      height: 1em;
+      /*fill: #FFF;*/
+      /*stroke: initial;*/
+      fill: initial;
+      stroke: black;
+    }
+    .icon-char_n2 {
+      width: 0.7em;
+      height: 1em;
+      /*fill: #FFF;*/
+      /*stroke: initial;*/
+      fill: initial;
+      stroke: black;
+    }
+    .icon-char_o {
+      width: 1.06em;
+      height: 1em;
+      /*fill: #FFF;*/
+      /*stroke: initial;*/
+      fill: initial;
+      stroke: black;
+    }
+    .icon-char_o2 {
+      width: 0.97em;
+      height: 1em;
+      /*fill: #FFF;*/
+      /*stroke: initial;*/
+      fill: initial;
+      stroke: black;
+    }
+    .icon-char_s {
+      width: 0.84em;
+      height: 1em;
+      /*fill: #FFF;*/
+      /*stroke: initial;*/
+      fill: initial;
+      stroke: black;
+    }
+    .icon-circle {
+      width: 1em;
+      height: 1em;
+      /*fill: #E46363;*/
+      /*stroke: initial;*/
+      fill: initial;
+      stroke: black;
+    }
+    .icon-dribbble {
+      width: 1em;
+      height: 1em;
+      /*fill: #4A4A4A;*/
+      /*stroke: initial;*/
+      fill: initial;
+      stroke: black;
+    }
+    .icon-front_a {
+      width: 0.95em;
+      height: 1em;
+      /*fill: #E46363;*/
+      /*stroke: initial;*/
+      fill: initial;
+      stroke: black;
+    }
+    .icon-mail {
+      width: 1em;
+      height: 1em;
+      /*fill: #4A4A4A;*/
+      /*stroke: initial;*/
+      fill: initial;
+      stroke: black;
+    }
+    .icon-mouse {
+      width: 0.69em;
+      height: 1em;
+      /*fill: #4A4A4A;*/
+      /*stroke: initial;*/
+      fill: initial;
+      stroke: black;
+    }
+    .icon-triangle {
+      width: 0.9em;
+      height: 1em;
+      /*fill: #E46363;*/
+      /*stroke: initial;*/
+      fill: initial;
+      stroke: black;
+    }
+    
+  </style>
+</head>
+<body>
+  <h1>Icons: <span id="count"></span></h1>
+
+  <label style="display: block; width: 300px; margin: 20px auto;">
+    Icon size <output for="size" id="size-value">100</output>
+    <input type="range" id="size" value="100" min="6" max="1000">
+  </label>
+
+  <ul class="icons-list">
+    
+    <li class="icon-box">
+      <input class="icon-class-name autoselect" type="text" value=".icon-back_a" readonly>
+      <div class="icon-container">
+        <svg class="icon icon-back_a">
+          <use xlink:href="/img/sprite.svg#icon-back_a"></use>
+        </svg>
+      </div>
+    </li>
+    
+    <li class="icon-box">
+      <input class="icon-class-name autoselect" type="text" value=".icon-behance" readonly>
+      <div class="icon-container">
+        <svg class="icon icon-behance">
+          <use xlink:href="/img/sprite.svg#icon-behance"></use>
+        </svg>
+      </div>
+    </li>
+    
+    <li class="icon-box">
+      <input class="icon-class-name autoselect" type="text" value=".icon-char_c" readonly>
+      <div class="icon-container">
+        <svg class="icon icon-char_c">
+          <use xlink:href="/img/sprite.svg#icon-char_c"></use>
+        </svg>
+      </div>
+    </li>
+    
+    <li class="icon-box">
+      <input class="icon-class-name autoselect" type="text" value=".icon-char_g" readonly>
+      <div class="icon-container">
+        <svg class="icon icon-char_g">
+          <use xlink:href="/img/sprite.svg#icon-char_g"></use>
+        </svg>
+      </div>
+    </li>
+    
+    <li class="icon-box">
+      <input class="icon-class-name autoselect" type="text" value=".icon-char_i" readonly>
+      <div class="icon-container">
+        <svg class="icon icon-char_i">
+          <use xlink:href="/img/sprite.svg#icon-char_i"></use>
+        </svg>
+      </div>
+    </li>
+    
+    <li class="icon-box">
+      <input class="icon-class-name autoselect" type="text" value=".icon-char_m" readonly>
+      <div class="icon-container">
+        <svg class="icon icon-char_m">
+          <use xlink:href="/img/sprite.svg#icon-char_m"></use>
+        </svg>
+      </div>
+    </li>
+    
+    <li class="icon-box">
+      <input class="icon-class-name autoselect" type="text" value=".icon-char_m2" readonly>
+      <div class="icon-container">
+        <svg class="icon icon-char_m2">
+          <use xlink:href="/img/sprite.svg#icon-char_m2"></use>
+        </svg>
+      </div>
+    </li>
+    
+    <li class="icon-box">
+      <input class="icon-class-name autoselect" type="text" value=".icon-char_n" readonly>
+      <div class="icon-container">
+        <svg class="icon icon-char_n">
+          <use xlink:href="/img/sprite.svg#icon-char_n"></use>
+        </svg>
+      </div>
+    </li>
+    
+    <li class="icon-box">
+      <input class="icon-class-name autoselect" type="text" value=".icon-char_n2" readonly>
+      <div class="icon-container">
+        <svg class="icon icon-char_n2">
+          <use xlink:href="/img/sprite.svg#icon-char_n2"></use>
+        </svg>
+      </div>
+    </li>
+    
+    <li class="icon-box">
+      <input class="icon-class-name autoselect" type="text" value=".icon-char_o" readonly>
+      <div class="icon-container">
+        <svg class="icon icon-char_o">
+          <use xlink:href="/img/sprite.svg#icon-char_o"></use>
+        </svg>
+      </div>
+    </li>
+    
+    <li class="icon-box">
+      <input class="icon-class-name autoselect" type="text" value=".icon-char_o2" readonly>
+      <div class="icon-container">
+        <svg class="icon icon-char_o2">
+          <use xlink:href="/img/sprite.svg#icon-char_o2"></use>
+        </svg>
+      </div>
+    </li>
+    
+    <li class="icon-box">
+      <input class="icon-class-name autoselect" type="text" value=".icon-char_s" readonly>
+      <div class="icon-container">
+        <svg class="icon icon-char_s">
+          <use xlink:href="/img/sprite.svg#icon-char_s"></use>
+        </svg>
+      </div>
+    </li>
+    
+    <li class="icon-box">
+      <input class="icon-class-name autoselect" type="text" value=".icon-circle" readonly>
+      <div class="icon-container">
+        <svg class="icon icon-circle">
+          <use xlink:href="/img/sprite.svg#icon-circle"></use>
+        </svg>
+      </div>
+    </li>
+    
+    <li class="icon-box">
+      <input class="icon-class-name autoselect" type="text" value=".icon-dribbble" readonly>
+      <div class="icon-container">
+        <svg class="icon icon-dribbble">
+          <use xlink:href="/img/sprite.svg#icon-dribbble"></use>
+        </svg>
+      </div>
+    </li>
+    
+    <li class="icon-box">
+      <input class="icon-class-name autoselect" type="text" value=".icon-front_a" readonly>
+      <div class="icon-container">
+        <svg class="icon icon-front_a">
+          <use xlink:href="/img/sprite.svg#icon-front_a"></use>
+        </svg>
+      </div>
+    </li>
+    
+    <li class="icon-box">
+      <input class="icon-class-name autoselect" type="text" value=".icon-mail" readonly>
+      <div class="icon-container">
+        <svg class="icon icon-mail">
+          <use xlink:href="/img/sprite.svg#icon-mail"></use>
+        </svg>
+      </div>
+    </li>
+    
+    <li class="icon-box">
+      <input class="icon-class-name autoselect" type="text" value=".icon-mouse" readonly>
+      <div class="icon-container">
+        <svg class="icon icon-mouse">
+          <use xlink:href="/img/sprite.svg#icon-mouse"></use>
+        </svg>
+      </div>
+    </li>
+    
+    <li class="icon-box">
+      <input class="icon-class-name autoselect" type="text" value=".icon-triangle" readonly>
+      <div class="icon-container">
+        <svg class="icon icon-triangle">
+          <use xlink:href="/img/sprite.svg#icon-triangle"></use>
+        </svg>
+      </div>
+    </li>
+    
+  </ul>
+
+  <script>
+    var change = document.getElementById('size');
+    var changeVal = document.getElementById('size-value');
+    var count = document.getElementById('count');
+    var autoselect = document.getElementsByClassName('autoselect');
+    var icons = document.getElementsByClassName('icon');
+    Array.prototype.forEach.call(autoselect, function(el) {
+      el.onclick = function() {
+        this.focus();
+        this.select();
+      };
+    });
+    change.oninput = function() {
+      var val = this.value;
+      changeVal.value = val;
+      Array.prototype.forEach.call(icons, function(el) {
+        el.style.fontSize = val + 'px';
+      });
+    }
+    count.innerHTML = icons.length;
+  </script>
+</body>
+</html>

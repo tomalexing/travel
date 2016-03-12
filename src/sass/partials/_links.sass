@@ -1,0 +1,36 @@
+.links
+  font-size: 0
+  &_dark,
+  &.is-dark
+    .links__link
+      .svg-icon
+        fill: black
+  &_ligth,
+    .links__link
+      .svg-icon
+        fill: white
+  +r(1023)
+    .links__item
+      &:not(:last-child)
+        margin-right: 10px
+
+.links__item
+  display: inline-block
+  vertical-align: top
+  font-size: 14px
+  &:not(:last-child)
+    margin-right: 20px
+
+.links__link
+  display: block
+  opacity: 0.7
+  +trans(opacity, 0.5s)
+  text-decoration: none
+  color: inherit
+  .svg-icon
+    +trans(fill, 0.5s)
+    fill: white
+    display: block
+    font-size: 32px
+  &:hover
+    opacity: 1

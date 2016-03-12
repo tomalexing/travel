@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1920px" height="639px" viewBox="0 0 1920 639" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4 (15588) - http://www.bohemiancoding.com/sketch -->
+    <title>project-1-bg</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1920" height="639"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="project-1-bg" sketch:type="MSLayerGroup">
+            <mask id="mask-2" sketch:name="Mask" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+            <path d="M-154.007,468.706 C-154.007,468.706 158.058,-1 357.358,-1 C556.658,-1 605.132,250.807 698.416,249.177 C793.775,247.512 917.28,20.901 1039.444,4.486 C1254.059,-24.352 1425.154,495.936 1631.493,468.631 C1955.231,425.792 1931.91,359.114 1976.522,311.722 C2057.246,225.966 1992.852,637.713 1992.852,637.713 L-147.809,637.713 L-154.007,468.706 L-154.007,468.706 Z" id="Shape" opacity="0.2" fill="#00C6CA" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+            <path d="M-206,362.337 C-206,362.337 22.445,18.837 199.993,18.837 C336.865,18.837 489.365,354.65 602.067,356.793 C691.426,358.492 590.273,-50.741 881.272,26.768 C1270.622,130.473 1255.553,535.851 1489.141,492.854 C1751.07,444.642 1746.845,298.599 1993.249,439.159 C2111.908,506.846 1993.249,639.99 1993.249,639.99 L-188.438,639.99 L-206,362.337 L-206,362.337 Z" id="Shape" opacity="0.2" fill="#7792C5" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+            <path d="M-46,487.174 C-46,487.174 430.450382,248.617 674.025914,216.106 C757.194661,204.934 831.524067,208.474 928.09612,335.728 C961.354362,379.55 1019.95991,439.504 1102.47796,450.958 C1184.996,462.413 1245.20969,488.665 1302.17261,582.652 C1359.13462,676.638 1302.17261,647.401 1302.17261,647.401 L-39.4376526,647.401 L-46,487.174 L-46,487.174 Z" id="Shape" opacity="0.2" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+        </g>
+    </g>
+</svg>

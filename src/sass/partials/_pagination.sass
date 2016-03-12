@@ -1,0 +1,59 @@
+.pagination
+  position: fixed
+  z-index: 9
+  top: 0
+  right: 40px
+  bottom: 0
+  display: flex
+  align-items: center
+  justify-content: center
+  &_dark,
+  &.is-dark
+    .pagination__link
+      &:before
+        background: black
+      svg
+        stroke: black
+  +rmin(1650)
+    right: 50px
+  +r(1023)
+    display: none
+
+.pagination__link
+  display: block
+  position: relative
+  width: 28px
+  height: 28px
+  box-sizing: border-box
+  cursor: pointer
+  color: inherit
+  text-decoration: none
+  opacity: 0.5
+  transition: opacity 0.5s ease
+  &:not(:first-child)
+    margin-top: 12px
+  &:before
+    content: ""
+    position: absolute
+    top: 50%
+    left: 50%
+    width: 6px
+    height: 6px
+    border-radius: 50%
+    background: white
+    margin: -3px 0 0 -3px
+    transition: background-color 0.5s ease
+  svg
+    transform: rotate(-90deg)
+    display: block
+    stroke: white
+    stroke-width: 1px
+    fill: none
+    stroke-dashoffset: 120px
+    stroke-dasharray: 120px
+    transition: all 0.5s ease
+  &:hover,
+  &.is-active
+    opacity: 1
+    svg
+      stroke-dashoffset: 0

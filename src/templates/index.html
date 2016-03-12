@@ -1,0 +1,39 @@
+---
+title: AltoLabs
+bodyClass: 'fade'
+SCRIPTS:
+  - app
+---
+{% extends "layouts/_layout.html" %}
+{% block content %}
+  {% include "partials/_header.html" %}
+  {% include "partials/_pagination.html" %}
+
+  <div id="fullpage">
+
+    <div class="section section-intro">
+      <div class="section-content">
+        {% include "partials/_intro.html" %}
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-content">
+        {% include "partials/_qmedic.html" %}
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-content">
+        {% include "partials/_milkyway.html" %}
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-content">
+        {% include "partials/_rexpro.html" %}
+      </div>
+    </div>
+
+  </div>
+{% endblock %}

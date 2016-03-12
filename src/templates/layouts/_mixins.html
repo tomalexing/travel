@@ -1,0 +1,34 @@
+{% macro svgicon(name, className) %}
+<svg class="svg-icon svg-{{name}}{% if className %} {{className}}{% endif %}">
+  <use xlink:href="img/sprite.svg#svg-{{name}}"></use>
+</svg>
+{% endmacro %}
+
+{% macro _btnInner(text) %}
+<span class="btn__border">
+  <span class="top"></span>
+  <span class="right"></span>
+  <span class="bottom"></span>
+  <span class="left"></span>
+</span>
+<span class="btn__text">{{text}}</span>
+{% endmacro %}
+
+{% macro btn(text, className) %}
+<button type="button" class="btn{% if className %} {{className}}{% endif %}">
+  {{_btnInner(text)}}
+</button>
+{% endmacro %}
+
+{% macro btnLink(text, className, href, target) %}
+<a href="{% if href %}{{href}}{% else %}#{% endif %}"
+  class="btn{% if className %} {{className}}{% endif %}" {% if target %} {% else %}target="_blank"{% endif %}>
+  {{_btnInner(text)}}
+</a>
+{% endmacro %}
+
+{% macro pagiCircle() %}
+<svg width="28" height="28">
+  <circle cx="14" cy="14" r="13"></circle>
+</svg>
+{% endmacro %}

@@ -1,0 +1,40 @@
+@function em($size, $context: 16)
+  @return ($size/$context) * 1em
+
+@function img-url($image)
+  @return url('../img/#{$image}')
+
+=image($image)
+  background-image: img-url($image)
+
+=trans($what: all, $dur: 0.2s, $easing: ease)
+  transition: $what $dur $easing
+
+=scroll-touch
+  -webkit-overflow-scrolling: touch
+
+*
+  &.clearfix
+    +clr
+
+.clearfix
+  display: table
+  width: 100%
+  clear: both
+
+=gpu
+  transform: translate3d(0,0,0)
+
+=md
+  +r(1023)
+    @content
+
+=sm
+  +r(767)
+    @content
+
+=xsm
+  +r(599)
+    @content
+
+

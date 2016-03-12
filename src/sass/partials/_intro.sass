@@ -1,0 +1,245 @@
+.intro-container
+  position: absolute
+  z-index: 99
+  top: 0
+  left: 0
+  right: 0
+  perspective: 1500px
+  overflow: hidden
+  background: black
+
+.intro
+  position: relative
+  background: black
+  color: white
+  min-height: 100%
+  min-height: 100vh
+  padding: 100px 15px 150px
+  box-sizing: border-box
+  font-size: 0
+  display: flex
+  align-items: center
+  justify-content: center
+  font-size: 10px
+  font-size: 0.9vmin
+  transform-origin: center bottom
+  +r(1300)
+    font-size: 0.76vmin
+  +r(1023)
+    padding-top: 60px
+    padding-bottom: 40px
+    .intro__footer
+      padding-bottom: 20px
+    .scroll-down
+      display: none
+    .intro__main-text
+      position: relative
+      margin-top: percentage(100/1024)
+      .btn
+        display: none
+
+.intro__center
+  text-align: center
+  user-select: none
+
+.intro__links
+  position: absolute
+  top: 60px
+  right: 60px
+
+.intro__triangle
+  margin-bottom: em(164,10)
+  position: relative
+  .svg-icon
+    display: block
+    margin: auto
+    font-size: em(80,10)
+  +r(500)
+    .is-animated &
+      top: -30px
+
+.intro__main-text
+  position: absolute
+  top: 50%
+  left: 0
+  right: 0
+  visibility: hidden
+  +f(pr, 50, 60)
+  line-height: 1.4
+  color: #FFF
+  margin: -2em auto 0
+  .btn
+    display: block
+    margin: percentage(110/1920) auto 0
+  .h1
+    margin: auto
+    max-width: em(890, 50)
+    padding: 0 15px
+  +rmin(500)
+    .h1
+      br
+        display: none
+  +r(500)
+    margin-top: -3em
+    .h1
+      font-size: 24px
+  +r(350)
+    .h1
+      font-size: 20px
+      padding-left: 0
+      padding-right: 0
+
+.intro__footer
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0
+  text-align: center
+  padding-bottom: percentage(50/1920)
+  padding-bottom: 1.7%
+
+.parallax
+  position: relative
+
+.parallax__inner
+  perspective: 600px
+
+.parallax__layer
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0
+  padding-bottom: em(120, 10)
+
+.parallax__layer-1
+  position: relative
+  z-index: 0
+
+.parallax__layer-2
+  top: 0
+  bottom: auto
+  z-index: 1
+
+.parallax__layer-static
+  bottom: 0
+  z-index: 1
+  box-sizing: border-box
+  height: 100%
+
+.parallax__layer-3
+  z-index: 2
+
+.parallax__row
+  line-height: 0
+  perspective: 1000px
+  &:not(:first-child)
+    margin-top: em(60,10)
+
+  .svg-char_n2
+    width: 0.9216em
+  .svg-char_m2
+    margin-right: 0.549em + 0.11039em
+  .svg-char_o2
+    width: 1.0641em
+
+  &_2,
+    .char
+      margin: 0 em(38,154)
+
+.char
+  display: inline-block
+  vertical-align: middle
+  position: relative
+  z-index: 2
+  font-size: em(154,10)
+  margin: 0 em(17,154)
+
+.char-placeholder
+  visibility: hidden
+  opacity: 0
+
+.char-a
+  position: absolute
+  bottom: 0
+  left: 50%
+  font-size: em(559,10)
+  margin: 0 0 0 -0.4767em
+  background-repeat: no-repeat
+  background-position: center
+  background-size: contain
+  width: 0.9535em
+  height: 1em
+  +gpu
+  svg
+    fill: url('/#a-gradient')
+
+.char-shadow
+  &:before
+    content: ""
+    position: absolute
+    z-index: 0
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    background-size: cover
+    height: 1.3em
+    width: 1.3em
+  .svg-icon
+    font-size: inherit
+    position: relative
+    z-index: 1
+
+.char-shadow-a
+  &:before
+    background-image: img-url('char-a-only-shadow.png')
+    height: em(758,559)
+    width: em(733,559)
+
+.char-shadow-o
+  &:before
+    background-image: img-url('char-o-only-shadow.png')
+    height: em(268,154)
+    width: em(277,154)
+
+.scroll-down
+  display: inline-block
+  +f(l, 13, 200)
+  min-width: 200px
+  font-size: 10px
+  color: #FFF
+  text-align: center
+  text-transform: uppercase
+  cursor: pointer
+  +gpu
+  .svg-icon
+    display: block
+    margin: 20px auto 0
+    fill: white
+    font-size: 48px
+  &:hover
+    .scroll-down__text,
+    .scroll-down__alt-text
+      transform: translate3d(0,10px,0)
+  +rh(750)
+    .svg-icon
+      font-size: 38px
+  .intro.is-animated &
+    .scroll-down__text
+      opacity: 0
+      visibility: hidden
+    .scroll-down__alt-text
+      opacity: 1
+      visibility: visible
+
+.scroll-down__text
+  display: block
+  transition: all 0.5s ease
+
+.scroll-down__alt-text
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  transition: all 0.5s ease
+  opacity: 0
+  visibility: hidden

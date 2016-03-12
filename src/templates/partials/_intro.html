@@ -1,0 +1,95 @@
+<!-- BEGIN intro -->
+<svg style="position: absolute; left: -9999px" viewBox="0 0 733 759" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="a-gradient">
+            <stop stop-color="#FF6363" offset="0%"></stop>
+            <stop stop-color="#F8393A" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+</svg>
+<div class="intro">
+  <div class="intro__center">
+    {# <div class="intro__links">
+      {% include "./_links.html" %}
+    </div> #}
+
+    <div class="intro__triangle">
+      {{mixins.svgicon('triangle')}}
+    </div>
+
+    <div class="parallax">
+      <div class="parallax__inner">
+          <div class="parallax__layer parallax__layer-1">
+            <div class="parallax__row">
+              {{mixins.svgicon('char_c', 'char char-placeholder')}}
+              {{mixins.svgicon('char_o', 'char char-placeholder')}}
+              {{mixins.svgicon('char_m2', 'char')}}
+              {{mixins.svgicon('char_i', 'char')}}
+              {{mixins.svgicon('char_n2', 'char char-placeholder')}}
+              {{mixins.svgicon('char_g', 'char char-placeholder')}}
+            </div>
+            <div class="parallax__row parallax__row_2">
+              {{mixins.svgicon('char_s', 'char char-placeholder')}}
+              {{mixins.svgicon('char_o', 'char char-placeholder')}}
+              {{mixins.svgicon('char_o', 'char')}}
+              {{mixins.svgicon('char_n', 'char char-placeholder')}}
+            </div>
+          </div>
+
+          <div class="parallax__layer parallax__layer-2">
+            <div class="parallax__row">
+              {{mixins.svgicon('char_c', 'char')}}
+              {{mixins.svgicon('char_o', 'char')}}
+              {{mixins.svgicon('char_m2', 'char char-placeholder')}}
+              {{mixins.svgicon('char_i', 'char char-placeholder')}}
+              {{mixins.svgicon('char_n2', 'char')}}
+              {{mixins.svgicon('char_g', 'char')}}
+            </div>
+             <div class="parallax__row parallax__row_2">
+              {{mixins.svgicon('char_s', 'char char-placeholder')}}
+            </div>
+          </div>
+
+          <div class="parallax__layer parallax__layer-static">
+            {# {{mixins.svgicon('back_a', 'char char-a')}} #}
+            <div class="char char-a char-shadow char-shadow-a">
+              {{mixins.svgicon('back_a')}}
+            </div>
+            <div class="char char-a char-shadow char-shadow-a">
+              {{mixins.svgicon('back_a')}}
+            </div>
+          </div>
+
+          <div class="parallax__layer parallax__layer-3">
+            <div class="parallax__row">
+              {{mixins.svgicon('char_c', 'char char-placeholder')}}
+            </div>
+            <div class="parallax__row parallax__row_2">
+              {{mixins.svgicon('char_s', 'char')}}
+              <div class="char char-shadow char-shadow-o">
+                {{mixins.svgicon('char_o')}}
+              </div>
+              {{mixins.svgicon('char_o2', 'char char-placeholder')}}
+              {{mixins.svgicon('char_n', 'char')}}
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="intro__main-text">
+      <h1 class="h1">Alto combines marketing <br>and design to create <br>brands that lasts.</h1>
+
+      {{mixins.btnLink('View projects', 'btn_light','#qmedic','bla')}}
+    </div>
+
+  </div>
+
+  <div class="intro__footer">
+      <div class="scroll-down">
+        <span class="scroll-down__text">Scroll down</span>
+        <span class="scroll-down__alt-text">Keep Scrolling</span>
+        {{mixins.svgicon('mouse')}}
+      </div>
+    </div>
+</div>
+<!-- END intro -->
