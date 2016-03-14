@@ -136,7 +136,7 @@ body {
   -moz-font-smoothing: antialiased;
   -ms-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
-  background: black;
+  background: #FFF;
   color: #FFF;
 }
 
@@ -1261,6 +1261,7 @@ html.fp-enabled,
   max-width: 700px;
   text-align: center;
   margin: 90px auto 0;
+  color: #919191;
 }
 
 .project_one-col .project__about-line {
@@ -1335,6 +1336,7 @@ html.fp-enabled,
   position: relative;
   z-index: 0;
   box-sizing: border-box;
+  color: #999;
 }
 
 .project__about-line {
@@ -1353,6 +1355,7 @@ html.fp-enabled,
 }
 
 .project__description {
+  color: #919191;
   margin: 30px 0 40px;
   line-height: 2;
   font-family: "montserrat-light";
@@ -1724,6 +1727,7 @@ html.fp-enabled,
     margin: 60px auto 0;
     max-width: 700px;
     text-align: center;
+    color: #919191;
   }
   .project .project__about-line {
     margin-left: auto;
@@ -1733,6 +1737,7 @@ html.fp-enabled,
     padding: 0;
     font-size: 15px;
     line-height: 1.8;
+    color: #919191;
   }
   .project .project__image {
     position: static;

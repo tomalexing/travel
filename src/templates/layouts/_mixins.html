@@ -1,6 +1,6 @@
 {% macro svgicon(name, className) %}
-<svg class="svg-icon svg-{{name}}{% if className %} {{className}}{% endif %}">
-  <use xlink:href="img/sprite.svg#svg-{{name}}"></use>
+<svg class="icon icon-{{name}}{% if className %} {{className}}{% endif %}">
+  <use xlink:href="img/sprite.svg#icon-{{name}}"></use>
 </svg>
 {% endmacro %}
 

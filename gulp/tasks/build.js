@@ -10,9 +10,9 @@ function build(cb) {
         'sass',
         'nunjucks',
         'webpack',
-        'copy'
+        'copy',
+        cb
     );
-    cb();
 }
 
 gulp.task('build', function(cb) {
